@@ -1,0 +1,21 @@
+{
+  "Commodity_Energy": [
+    "Basic_Materials",
+    "Energy"
+  ],
+  "Cyclical_Growth": [
+    "Communication_Services",
+    "Consumer_Cyclical",
+    "Technology",
+    "Industrials"
+  ],
+  "Defensive_Stable_Growth": [
+    "Consumer_Defensive",
+    "Healthcare",
+    "Utilities"
+  ],
+  "Financial_and_Real_Estate": [
+    "Financial_Services",
+    "Real_Estate"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "tradix-ai-relay-server",
+  "version": "1.0.0",
+  "description": "WebSocket relay server for Tradix AI",
+  "main": "realtime-server.js",
+  "scripts": {
+    "start": "node realtime-server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
