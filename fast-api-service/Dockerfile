@@ -1,15 +1,17 @@
-FROM python:3.11
+FROM python:3.11-slim
 
 WORKDIR /app
 
 ENV PYTHONPATH=/app:/app/services
 ENV APP_BASE_DIR=/app
 
-RUN apt-get update && apt-get install -y \
-libatlas-base-dev \
-libblas-dev \
-liblapack-dev \
-&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    g++ \
+    libatlas-base-dev \
+    libblas-dev \
+    liblapack-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
